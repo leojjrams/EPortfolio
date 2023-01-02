@@ -1,0 +1,133 @@
+<! DOCTYPE HTML>
+
+<!--
+    Titre : Loisirs.html
+    Auteur : Rams Léo
+    Groupe : 104
+    Dernière date de modification : 07/11/2021
+-->
+
+<html>
+<!---------------------------------------------------------Partie non visible à l'écran------------------------------------------------------------->
+<head>
+    <!--Titre-->
+    <title>ePortfolio Loisirs</title>
+    <!--Importation des ficheirs nécessaires-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleLoisirs.css" />
+</head>
+<!-----------------------------------------------------------Partie visible à l'écran--------------------------------------------------------------->
+<body>
+    <!----------------------------------------------------------Debut de la page-------------------------------------------------------------------->
+    <div id="page">
+        <!--------------------------------------Importatino des fichiers nécessaires à l'utilisation de bootstrap----------------------------------->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <!--------------------------------Entête avec le logo, le nom et prénom ainsi que la barre de navigation----------------------------------->
+        <header>
+            <div id="Debut_de_page">
+                <div id="entete">
+                    <!--Logo-->
+                    <div id="logo">
+                        <img src="images/logo3.jpg" alt="Image logo" />
+                    </div>
+                    <!--Nom et Prénom-->
+                    <div id="NomPrenom">
+                        <p>Léo Rams</p>
+                    </div>
+                </div>
+                <!------------------------------------------Début de la barre de navigation-------------------------------------------------------->
+                <!--********************************************Elément bootstrap****************************************************************-->
+                <div id="navbar">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand">Navigation</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <!--Eléments de la barre de navigation-->
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="Accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Formation.html">Formation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Competences.html">Compétences</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Loisirs
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="Loisirs.html#Escalade">Escalade</a>
+                                        <a class="dropdown-item" href="Loisirs.html#Workout">Street workout</a>
+                                        <a class="dropdown-item" href="Loisirs.html#Jeux">Jeux vidéo</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!------------------------------------------------Fin de la barre de navigation------------------------------------------------------>
+            </div>
+        </header>
+        <!-----------------------------------------------------------Fin de l'entête----------------------------------------------------------------->
+        <!--Titre de la partie-->
+        <div id="titre">
+            <p>Loisirs</p>
+        </div>
+        <!----------------------------------------------------------Début de l'article--------------------------------------------------------------->
+        <article>
+            <!--Texte sur l'escalade-->
+            <div id="Escalade">
+                <h2>L'Escalade</h2>
+                <p>
+                    Je pratique relativement régulièrement l'escalade depuis quelques années maintenant. Je ne fais que du block, c'est à dire uniquement des murs assez bas pour ne pas avoir à s'équiper de quoi que ce soit. Je le pratique dans des salles qui y sont dédiées et y reste en moyenne 2 à 3 heures.
+                </p>
+                <div class="image">
+                    <video src="images/escalade.mp4" controls autoplay></video>
+                </div>
+            </div>
+            <!--Texte sur le street workout-->
+            <div id="Workout" style="overflow:auto; height:70%; width:60%">
+                <h2>Le Street Workout</h2>
+                <p>
+                    J'ai pour principale activité extra-scolaire le street workout, que je pratique 1 heure à 1h30 par jour 6 jours par semaine. Il s'agit d'un mélange entre la gymnastique sur barres asymétriques ou sur anneaux et la musculation au poids du corps. Plus simplement il s'agit d'éxécuter des exercices qui sont souvent éxécutés sur anneaux, sauf que ceux-ci sont pratiqués sur une barre à la place. Parmi les figures les plus connues, il y a notamment le drapeau humain ou encore le muscle-up.
+                </p>
+                <h5>Le drapeau humain</h5>
+                <div class="image">
+                    <img src="images/drapeau.jpeg" alt="Drapeau" class="d-block w-100" />
+                </div>
+                <h5>Le muscle-up</h5>
+                <div class="image">
+                    <video src="images/muscle.mp4" controls autoplay></video>
+                </div>
+            </div>
+            <!--Texte sur les jeux vidéo-->
+            <div id="Jeux" style="overflow:auto; height:70%; width:60%">
+                <h2>Les jeux vidéo</h2>
+                <p>
+                    Je joue régulièrement aux jeux vidéo, plus particulièrement à des jeux de stratégie, que ce soit au tour par tour ou en temps réel, mais aussi à des jeux de plateforme en solo ou en ligne. Parmi ces jeux, il y a par exemple Super Smash Bros ou encore Celeste.
+                </p>
+                <h5>Super Smash Bros</h5>
+                <div class="image">
+                    <video src="images/smash.mp4" alt="smash" controls autoplay></video>
+                </div>
+                <h5>Celeste</h5>
+                <div class="image">
+                    <video src="images/celeste.mp4" controls autoplay></video>
+                </div>
+            </div>
+        </article>
+        <!-------------------------------------------------------Fin de l'article------------------------------------------------------------------>
+    </div>
+    <!------------------------------------------------------------Fin de la page------------------------------------------------------------------->
+</body>
+</html>

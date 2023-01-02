@@ -1,0 +1,114 @@
+/*
+    Titre : styleFormation.css
+    Auteur : Rams Léo
+    Groupe : 104
+    Dernière date de modification : 07/11/2021
+*/
+
+/*Application du fond d'écran*/
+body {
+    background-image: url(../images/bibliotheque.jpg);
+    background-size: 100%;
+}
+
+/*Positionnement du logo au centre*/
+#logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Modification de la div contenant le nom et le prénom*/
+#NomPrenom {
+    color: midnightblue;
+    height: 8.9%;
+    background-color: white;
+    font-size: 2vw;
+    border-top: 15px solid white;
+    float: right;
+    margin-right: 2%;
+    border-bottom: 3px solid midnightblue;
+    width: 9.4%;
+    font-family: Georgia;
+    white-space: nowrap;
+}
+
+/*Modification de la barre de navigation*/
+#navbar{
+    background-color: white;
+    border-bottom: 3px solid midnightblue;
+    height: 8.9%;
+}
+
+.navbar{
+    border-bottom: 3px solid midnightblue;
+    position: absolute !important;
+    width: 88.6% !important;
+    height: 8.9%;
+    background-color: white !important;
+}
+/****************************************/
+
+/*Couleur de fond de l'entête*/
+#entete{
+    background-color: white;
+}
+
+/*Style du titre de la partie*/
+#titre {
+    text-align: center;
+    font-family: Impact;
+    color: white;
+    font-size: 350%;
+    background-color: midnightblue;
+    margin-top: 2%;
+}
+
+/*Modification du style des textes de l'article*/
+#Ecole, #Etudes, #Objectifs {
+    border: 3px solid midnightblue;
+    background-color: white;
+    width: 60%;
+    margin: 2% auto;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px #555;
+}
+
+#Ecole h2, #Etudes h2, #Objectifs h2 {
+    color: midnightblue;
+    font-family: Impact;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#Ecole p, #Etudes p, #Objectifs p {
+    margin: 2%;
+    font-family: 'Bodoni MT';
+}
+/**********************************************/
+
+
+/****************Media queries*******************/
+/*Au format portrait*/
+@media screen and (max-width:720px){
+    #NomPrenom{
+        white-space: unset;
+        width: 8.5vw;
+    }
+}
+
+/*Lorsque la barre de navigation de bootstrap change de format*/
+@media screen and (max-width:992px) {
+    #Debut_de_page {
+        padding-bottom: 200px;
+    }
+
+    header {
+        background-color: white;
+        border-bottom: 3px solid midnightblue;
+    }
+
+    #NomPrenom, .navbar, #navbar {
+        border-bottom: none;
+    }
+}

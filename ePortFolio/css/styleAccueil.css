@@ -1,0 +1,150 @@
+/*
+    Titre : styleAccueil.css
+    Auteur : Rams Léo
+    Groupe : 104
+    Dernière date de modification : 07/11/2021
+*/
+
+/*Application du fond d'écran*/
+body {
+    background-image: url(../images/blanc2.jpg);
+}
+
+/*Positionnement du logo au centre*/
+#logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/*Modification de la div contenant le nom et le prénom*/
+#NomPrenom{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: midnightblue;
+    border-bottom: 3px solid white;
+    font-family: Georgia;
+}
+
+/*Positionnement et ajustement de l'image de bienvenue*/
+#Bienvenue{
+    margin: 0 auto;
+    text-align: center;
+    width: 35%;
+}
+
+/*Modification de la barre de navigation de bootstrap*/
+.navbar{
+    background-color: white !important;
+    border-bottom: 3px solid midnightblue !important;
+}
+
+/*Couleur de fond de l'entête*/
+header{
+    background-color: white;
+}
+
+/*Modification du court texte de présentation*/
+#presentation h5{
+    text-align: center;
+    color: midnightblue;
+}
+
+#presentation {
+    background-color: white;
+    border: 3px solid midnightblue;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    font-family: 'Bodoni MT';
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px #555;
+}
+/********************************************/
+
+/*Modification du texte d'indication pour circuler à travers les pages*/
+#texte {
+    text-align: center;
+    color: midnightblue;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-style: italic;
+    font-family: Georgia;
+}
+
+/*******************************Modification du carousel bootstrap***************************/
+/*Modification des titres associés aux images*/
+#titre2{
+    border-top: 5px solid midnightblue;
+}
+
+#presentation h5{
+    font-family: Impact;
+}
+
+#Formation, #Competences, #Loisirs {
+    border: 6px solid midnightblue;
+    border-radius: 1%;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    font-family: Impact;
+}
+
+/*Modification des images du carousel*/
+#Jeux {
+    position: relative;
+    overflow: hidden;
+    clip: rect(1280px 586px);
+}
+
+section{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Modification des icones de circulation dans le carousel*/
+.carousel-control-next-icon {
+    background-image: url(../images/doigt_droite.png) !important;
+    background-size: 230%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/doigt_gauche.png) !important;
+    background-size: 230%;
+}
+
+.toast{
+    display: flex !important;
+}
+/********************************************************************************************/
+
+
+/****************Media queries*******************/
+/*Au format téléphone*/
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 100%;
+    }
+    #NomPrenom{
+        font-size: 100%;
+    }
+    #texte{
+        font-size: 10pt;
+    }
+}
+
+/*Du format téléphone au format portrait plus large*/
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    #logo {
+        width: 65%;
+    }
+    #NomPrenom {
+        font-size: 80%;
+    }
+}
